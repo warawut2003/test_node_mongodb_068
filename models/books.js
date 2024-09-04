@@ -7,7 +7,7 @@ const BookSchema = new mongoose.Schema({
     published_year : {type:Number ,required:true},
     genre : {type:String ,required:true},
     available : {type:Boolean ,required:true},
-},{versionKey:false})
+},{versionKey:false,timestamps:true})
 // Define Model
 
 module.exports = mongoose.model('Books',BookSchema);
